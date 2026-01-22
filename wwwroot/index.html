@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Personal</title>
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">NEXUS HR</div>
+
+        <div class="section-title">MENÚ PRINCIPAL</div>
+        <div class="menu-item active">
+            Colaboradores
+        </div>
+
+        <div class="section-title" style="margin-top: auto;">SISTEMA</div>
+        <div class="menu-item" style="opacity: 0.5; cursor: default;">
+            Analíticas
+        </div>
+        <div class="menu-item" style="opacity: 0.5; cursor: default;">
+            Configuración
+        </div>
+    </div>
+
+    <div class="main-content">
+
+        <div class="header-section">
+            <div class="module-box">HR</div>
+            <div class="module-info">
+                <span class="badge-status">Conectado</span>
+                <h1>Directorio General</h1>
+                <p>Base de Datos Corporativa</p>
+            </div>
+        </div>
+
+        <form id="empleadoForm" class="add-section">
+            <input type="text" id="nombre" placeholder="Nombre Completo" required>
+            <input type="text" id="cargo" placeholder="Cargo / Puesto" required>
+            <input type="number" id="salario" placeholder="Salario (Bs)" required>
+            <button type="submit" class="btn-primary">AÑADIR REGISTRO</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 50px;">ID</th>
+                    <th>EMPLEADO</th>
+                    <th>PUESTO</th>
+                    <th>FECHA ALTA</th>
+                    <th style="text-align: right;">REMUNERACIÓN</th>
+                    <th>ACCIONES</th>
+                </tr>
+            </thead>
+            <tbody id="tablaEmpleados">
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
